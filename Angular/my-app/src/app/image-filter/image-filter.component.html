@@ -1,0 +1,22 @@
+<style>
+    div {
+        text-align: center;
+    }
+</style>
+
+<div>
+    <h1>One way Data Binding</h1>
+    <select #fruit>
+        <option value="" selected disabled hidden>Pick an Fruit</option>
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Cherry">Cherry</option>
+        <option value="Dates">Dates</option>
+    </select>
+</div><br>
+<div>
+    <button (click)="display(fruit.value)">Find Image</button>
+</div>
+<div>
+    <img src={{out}}>
+</div>
